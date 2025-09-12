@@ -1,4 +1,4 @@
-# Direct Air Capture
+# DAC-Color Eludication
 [comment]: [![DOI:<10.1021/acs.jpca.4c02927>](http://img.shields.io/badge/JPCA_Paper-10.1021/acs.jpca.4c02927-blue.svg)](http://dx.doi.org/10.1021/acs.jpca.4c02927) 
 [comment]: [![ChemRxiv](http://img.shields.io/badge/ChemRxiv-10.26434/chemrxiv--2024--blwjs-EEEA62.svg)](http://dx.doi.org/10.26434/chemrxiv-2024-blwjs)
 [comment]: [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.11086701.svg)](https://doi.org/10.5281/zenodo.11086701)
@@ -6,6 +6,14 @@
 <img align="right" src='https://github.com/tjz21/DAC_metals/blob/main/MO8_structure.png' width = "189" height = "200">
 
 This repository contains the computational supporting information for the [*JPC A* publication](https://doi.org/10.1021/acs.jpca.4c02927), 'Electronic Structure and CO<sub>2</sub> Reactivity of Group IV/V/VI Tetraperoxometalates'. All parameters and structures needed to reproduce the reaction mechanism for [M(O<sub>2</sub>)<sub>4</sub>]<sup>x-</sup> + CO<sub>2</sub> &rarr; [MO(O<sub>2</sub>)<sub>2</sub>CO<sub>3</sub>]<sup>x-</sup> + O<sub>2</sub> are contained herein. Geometry optimizations were carried out in the Gaussian 16 Rev A.03<sup>1</sup> software package with the CAM-B3LYP functional. LANL2DZ was used for the metal center while C and O were modelled with 6-31+G\*. All xyz structures contain the 298.15 K Gibbs free energy in Ha in the comment line. Calculation summaries in each directory were produced using ESIgen.<sup>2</sup>
+
+| Calculation       | XC Functional | K<sub>3</sub>[V(O<sub>2</sub>)<sub>4</sub>] | K<sub>3</sub>[VO(O<sub>2</sub>)<sub>2</sub>(CO<sub>3</sub>)] | K[VO<sub>3</sub>]   |
+|------------------|---------------|----------|----------------|----------|
+| Optimization      | rSCAN         | 3×3×3    | 3×3×3          | 4×2×4    |
+| Bandstructure     | PBE           | 3×3×3    | 3×3×3          | 4×2×4    |
+| PDOS/isosurfaces  | rSCAN         | 6×6×6    | 6×6×6          | 6×4×6    |
+| Absorption        | rSCAN         | 6×6×6    | 6×6×6          | 6×4×6    |
+
 
 ## Contents
 ```
