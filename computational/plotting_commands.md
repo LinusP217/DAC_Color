@@ -1,24 +1,25 @@
-# Code
+# Color and DOS Analysis
 
-## Colour Calculations
+## Color Calculations
 
-Functions for turning experimental and simulated absorption spectra into CIELAB and sRGB color coordinates are provided in this Jupyter Notebook:
+Functions for turning experimental and simulated absorption spectra into CIELAB and sRGB color coordinates are provided in the `color_calculate.ipynb` Jupyter Notebook. Click the below badge to launch the notebook in Google Colab.
 
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/tjz21/DAC_Color/blob/main/computational/color_calculate.ipynb)
 
 ## *sumo* Plotting Commands
 Once *sumo* has been installed (https://github.com/SMTG-Bham/sumo), executing the below commands will generate the figures used in the manuscript.
+Replace `seedname` with the actual name of your file.
 
 ### Bandstructure
-#### 1--K<sub>3</sub>[V(O<sub>2</sub>)<sub>4</sub>]
+#### 1‒K<sub>3</sub>[V(O<sub>2</sub>)<sub>4</sub>]
 ```
 sumo-bandplot --code castep -f seedname.bands --scissor 1.62 --band-edges --format svg --title K3VO8 --ymin -6.0 --ymax +6.0
 ```
-#### 2--K<sub>3</sub>[VO(O<sub>2</sub>)<sub>2</sub>(CO<sub>3</sub>)]
+#### 2‒K<sub>3</sub>[VO(O<sub>2</sub>)<sub>2</sub>(CO<sub>3</sub>)]
 ```
 sumo-bandplot --code castep -f seedname.bands --scissor 2.85 --band-edges --format svg --title K3VO5CO3 --ymin -6.0 --ymax +6.0
 ```
-#### 3--K[VO<sub>3</sub>]
+#### 3‒K[VO<sub>3</sub>]
 ```
 sumo-bandplot --code castep -f seedname.bands --scissor 3.57 --band-edges --format svg --title KVO3 --ymin -6.0 --ymax +6.0
 ```
