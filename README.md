@@ -5,7 +5,9 @@
 
 <img align="right" src='https://github.com/tjz21/DAC_metals/blob/main/MO8_structure.png' width = "189" height = "200">
 
-This repository contains the supporting information for the *Dalton Transactions* manuscript 'Elucidating the direct air capture-induced color change of K<sub>3</sub>[V(O<sub>2</sub>)<sub>4</sub>] with *ab initio* modeling'. All input files needed to reproduce the computational figures are provided herein. Calculations were carried out in the CASTEP 20.11<sup>1</sup> OptaDOS 1.2.380<sup>2</sup> software packages with different XC functionals and MP k-grid combinations (*vide infra*). Experimental diffuse reflectance spectra were collected at room temperature on a Jasco V-670 spectrophotometer.
+<img align="right" src='https://github.com/LinusP217/DAC_Color/blob/main/MO8_LUCO_res.png' width = "200" height = "189">
+
+This repository contains the supporting information for the *Dalton Transactions* submitted manuscript 'Elucidating the direct air capture-induced color change of K<sub>3</sub>[V(O<sub>2</sub>)<sub>4</sub>] with *ab initio* modeling'. All input files needed to reproduce the computational figures are provided herein. Calculations were carried out in the CASTEP 20.11<sup>1</sup> and OptaDOS 1.2.380<sup>2</sup> software packages with different XC functionals and MP k-grid combinations (*vide infra*). Experimental diffuse reflectance spectra were collected at room temperature on a Jasco V-670 spectrophotometer.
 
 ## DFT Calculation Parameters
 
@@ -72,7 +74,7 @@ This repository contains the supporting information for the *Dalton Transactions
 │       ├── KVO3_fixed_03.txt
 │       └── KVO3_fixed_04.txt
 │
-├── experimental/    # Data gathered at room temperature with a Jasco V-670
+├── experimental/    # Experimental data gathered at room temperature with a Jasco V-670
 │   ├── K3VO8_abs.csv      # Kubelka-Munk absorbance, A = (1 - R)^2/(2R)
 │   ├── K3VO8_reflect.csv  # Diffuse reflectance
 │   ├── K3VO4_abs.csv
@@ -94,7 +96,7 @@ git clone https://github.com/tjz21/DAC_Color.git
 
 or if you would just like a specific file:
 
-<img align="center" src='https://github.com/tjz21/DAC_Color/blob/main/raw_link_image.png' width = "600" height = "63.4">
+<img align="center" src='https://github.com/LinusP217/DAC_Color/blob/main/raw_link_image.png' width = "600" height = "63.4">
 
 ```bash
 wget [raw URL of specific file]
