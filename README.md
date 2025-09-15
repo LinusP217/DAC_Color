@@ -2,11 +2,11 @@
 [comment]: [![DOI:<10.1021/acs.jpca.4c02927>](http://img.shields.io/badge/JPCA_Paper-10.1021/acs.jpca.4c02927-blue.svg)](http://dx.doi.org/10.1021/acs.jpca.4c02927) 
 [comment]: [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.11086701.svg)](https://doi.org/10.5281/zenodo.11086701)
 
-<img align="right" src='https://github.com/LinusP217/DAC_Color/blob/main/MO8_LUCO_res.png' width = "200" height = "189">
+<img align="right" src='https://github.com/tjz21/DAC_Color/blob/main/MO8_LUCO_res.png' width = "200" height = "189">
 
 This repository contains supporting information for the *Dalton Transactions* submitted manuscript 'Elucidating the direct air capture-induced color change of K<sub>3</sub>[V(O<sub>2</sub>)<sub>4</sub>] with *ab initio* modeling'. All input files needed to reproduce the computational figures are provided herein. Calculations were carried out in the CASTEP 20.11<sup>1</sup> and OptaDOS 1.2.380<sup>2</sup> software packages with different XC functionals and MP k-grid combinations (*vide infra*). Experimental diffuse reflectance spectra were collected at room temperature on a Jasco V-670 spectrophotometer.
 
-Instructions for performing the color calculations and creating the PDOS/bandstructure plots are provided [here](https://github.com/LinusP217/DAC_Color/blob/main/computational/plotting_commands.md)
+Instructions for performing the color calculations and creating the PDOS/bandstructure plots are provided [here](https://github.com/tjz21/DAC_Color/blob/main/computational/plotting_commands.md)
 
 ## DFT Calculation Parameters
 
@@ -84,7 +84,6 @@ Instructions for performing the color calculations and creating the PDOS/bandstr
 │   └── KVO3_reflect.csv
 
 18 directories, 56 files
-
 ```
 ## Instructions
 
@@ -95,7 +94,7 @@ git clone https://github.com/tjz21/DAC_Color.git
 
 or if you would just like a specific file:
 
-<img align="center" src='https://github.com/LinusP217/DAC_Color/blob/main/raw_link_image.png' width = "600" height = "63.4">
+<img align="center" src='https://github.com/tjz21/DAC_Color/blob/main/raw_link_image.png' width = "600" height = "63.4">
 
 ```bash
 wget [raw URL of specific file]
