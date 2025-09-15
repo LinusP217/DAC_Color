@@ -7,6 +7,8 @@
 
 This repository contains the supporting information for the *Dalton Transactions* submitted manuscript 'Elucidating the direct air capture-induced color change of K<sub>3</sub>[V(O<sub>2</sub>)<sub>4</sub>] with *ab initio* modeling'. All input files needed to reproduce the computational figures are provided herein. Calculations were carried out in the CASTEP 20.11<sup>1</sup> and OptaDOS 1.2.380<sup>2</sup> software packages with different XC functionals and MP k-grid combinations (*vide infra*). Experimental diffuse reflectance spectra were collected at room temperature on a Jasco V-670 spectrophotometer.
 
+Instructions for performing the color calculations and creating the PDOS/bandstructure plots are provided [here](https://github.com/LinusP217/DAC_Color/blob/main/computational/plotting_commands.md)
+
 ## DFT Calculation Parameters
 
 | Calculation       | XC Functional | K<sub>3</sub>[V(O<sub>2</sub>)<sub>4</sub>] | K<sub>3</sub>[VO(O<sub>2</sub>)<sub>2</sub>(CO<sub>3</sub>)] | K[VO<sub>3</sub>]   |
