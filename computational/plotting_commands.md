@@ -1,6 +1,10 @@
-# 
+# Code
 
 ## Colour Calculations
+
+Functions for turning experimental and simulated absorption spectra into CIELAB and sRGB color coordinates are provided in this Jupyter Notebook:
+
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/tjz21/DAC_Color/blob/main/computational/color_calculate.ipynb)
 
 ## *sumo* Plotting Commands
 Once *sumo* has been installed (https://github.com/SMTG-Bham/sumo), executing the below commands will generate the figures used in the manuscript.
