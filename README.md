@@ -1,11 +1,14 @@
-# DAC-Color Eludication
+# DAC‒Color Eludication
 [comment]: [![DOI:<10.1021/acs.jpca.4c02927>](http://img.shields.io/badge/JPCA_Paper-10.1021/acs.jpca.4c02927-blue.svg)](http://dx.doi.org/10.1021/acs.jpca.4c02927) 
 [comment]: [![ChemRxiv](http://img.shields.io/badge/ChemRxiv-10.26434/chemrxiv--2024--blwjs-EEEA62.svg)](http://dx.doi.org/10.26434/chemrxiv-2024-blwjs)
 [comment]: [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.11086701.svg)](https://doi.org/10.5281/zenodo.11086701)
 
 <img align="right" src='https://github.com/tjz21/DAC_metals/blob/main/MO8_structure.png' width = "189" height = "200">
 
-This repository contains the computational supporting information for the [*JPC A* publication](https://doi.org/10.1021/acs.jpca.4c02927), 'Electronic Structure and CO<sub>2</sub> Reactivity of Group IV/V/VI Tetraperoxometalates'. All parameters and structures needed to reproduce the reaction mechanism for [M(O<sub>2</sub>)<sub>4</sub>]<sup>x-</sup> + CO<sub>2</sub> &rarr; [MO(O<sub>2</sub>)<sub>2</sub>CO<sub>3</sub>]<sup>x-</sup> + O<sub>2</sub> are contained herein. Geometry optimizations were carried out in the Gaussian 16 Rev A.03<sup>1</sup> software package with the CAM-B3LYP functional. LANL2DZ was used for the metal center while C and O were modelled with 6-31+G\*. All xyz structures contain the 298.15 K Gibbs free energy in Ha in the comment line. Calculation summaries in each directory were produced using ESIgen.<sup>2</sup>
+This repository contains the supporting information for the *Dalton Transactions* manuscript 'Elucidating the direct air capture-induced color change of K<sub>3</sub>[V(O<sub>2</sub>)<sub>4</sub>] with *ab initio* modeling'. All input files needed to reproduce the computational figures are provided herein. Calculations were carried out in the CASTEP 20.11<sup>1</sup> OptaDOS<sup>2</sup> software packages with different XC functional and MP k-gird combinations (*vide infra*). Experimental diffuse reflectance spectra were collected at room temperature on a Jasco V-670 spectrophotometer.
+
+## Calculation Parameters
+CASTEP software package and Optados
 
 | Calculation       | XC Functional | K<sub>3</sub>[V(O<sub>2</sub>)<sub>4</sub>] | K<sub>3</sub>[VO(O<sub>2</sub>)<sub>2</sub>(CO<sub>3</sub>)] | K[VO<sub>3</sub>]   |
 |------------------|---------------|----------|----------------|----------|
@@ -22,15 +25,18 @@ This repository contains the computational supporting information for the [*JPC 
 │   │
 │   ├── K3VO8/
 │   │   ├── PDOS/           # Projected Density of States
-│   │   │   ├── K3VO8.cell  # castep input structure file
-│   │   │   └── K3VO8.param # castep input parameter file
+│   │   │   ├── K3VO8.cell  # PDOS castep input structure file
+│   │   │   └── K3VO8.param # PDOS castep input parameter file
+│   │   │
 │   │   ├── absorption/     
 │   │   │   ├── K3VO8.cell
-│   │   │   ├── K3VO8.odi   # OptaDOS input file (run after castep is finished)
-│   │   │   └── K3VO8.param
+│   │   │   ├── K3VO8.param
+│   │   │   └── K3VO8.odi   # OptaDOS input file (run after castep is finished)
+│   │   │
 │   │   ├── bandstructure/  # Γ -> X -> P -> N -> Γ -> Z
 │   │   │   ├── K3VO8.cell
 │   │   │   └── K3VO8.param
+│   │   │
 │   │   └── optimization/
 │   │       ├── K3VO8.cell
 │   │       └── K3VO8.param
@@ -47,11 +53,11 @@ This repository contains the computational supporting information for the [*JPC 
 │   │   ├── bandstructure/ # Γ -> Y -> V -> Γ -> A -> M -> L -> V
 │   │   └── optimization/
 │   │
-│   ├── orbital_colours.conf
-│   └── plotting_commands.md
+│   ├── orbital_colours.conf  # color codes for the sumo PDOS plots
+│   └── plotting_commands.md  # bash plotting commands for sumo
 │
 ├── experimental/    # Data gathered at room temperature with a Jasco V-670
-│   ├── K3VO8_abs.csv      # Kubelka-Munk absorbance
+│   ├── K3VO8_abs.csv      # Kubelka-Munk absorbance, A = (1 - R)^2/(2R)
 │   ├── K3VO8_reflect.csv  # Diffuse reflectance
 │   ├── K3VO4_abs.csv
 │   ├── K3VO4_reflect.csv
